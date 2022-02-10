@@ -1,3 +1,4 @@
+[embed]https://github.com/raja21068/CV/blob/main/CV.pdf[/embed]
 Directory Structure
 -------------------
 css\              - Stylesheets CSS files for the template.
