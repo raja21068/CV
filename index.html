@@ -455,49 +455,64 @@
     <div class="absolute w-full h-full bg-[url('/api/placeholder/1920/1080')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
   </div>
   <!-- Main Content -->
-  <div class="container mx-auto px-6 py-16 md:py-24 relative z-10 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 animate-pulse-slow">
-      Dr. Rajesh Kumar
-    </h1>
-    <div class="title text-2xl md:text-3xl font-semibold mb-4">
-      Associate Researcher &amp; Teaching Fellow
-    </div>
-    <p class="text-base md:text-xl mb-8">
-      Expert in Network Security, Large Language Models, Deep Learning & Blockchain
-    </p>
-    <!-- Research Interests Block -->
-    <div class="research-interests mb-8">
-      <h3 class="text-xl md:text-2xl font-bold mb-4">Research Interests</h3>
-      <div class="flex flex-wrap gap-3 justify-center">
-        <span class="bg-blue-700 bg-opacity-70 backdrop-blur-sm px-3 py-1 rounded-full text-sm shadow-md">Network Security</span>
-        <span class="bg-blue-700 bg-opacity-70 backdrop-blur-sm px-3 py-1 rounded-full text-sm shadow-md">Blockchain Technology</span>
-        <span class="bg-blue-700 bg-opacity-70 backdrop-blur-sm px-3 py-1 rounded-full text-sm shadow-md">Deep Learning</span>
-        <span class="bg-blue-700 bg-opacity-70 backdrop-blur-sm px-3 py-1 rounded-full text-sm shadow-md">Large Language Models</span>
-        <span class="bg-blue-700 bg-opacity-70 backdrop-blur-sm px-3 py-1 rounded-full text-sm shadow-md">Computer Vision</span>
+  <div class="container mx-auto px-6 py-16 md:py-24 relative z-10 flex flex-col md:flex-row items-center">
+    <!-- Left Column: Content -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 animate-pulse-slow">
+        Dr. Rajesh Kumar
+      </h1>
+      <div class="text-2xl md:text-3xl font-semibold mb-4">
+        Associate Researcher &amp; Teaching Fellow
+      </div>
+      <p class="text-base md:text-xl mb-8">
+        Expert in Network Security, Large Language Models, Deep Learning &amp; Blockchain
+      </p>
+	  
+
+      <!-- (Optional) You can add more content or a call-to-action here -->
+      <div class="contact-links flex flex-wrap gap-4 justify-center md:justify-start mb-8">
+        <a href="mailto:rajakumarlohano@gmail.com" class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
+        <i class="fas fa-envelope me-2"></i> Email
+      </a>
+      <a href="tel:+923332836705" class="contact-link bg-transparent border-2 bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-white hover:text-blue-800 transition">
+        <i class="fas fa-phone me-2"></i> Contact
+      </a>
+      <a href="https://scholar.google.com/citations?user=2_F5e_YAAAAJ&hl=en" target="_blank" class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
+        <i class="fas fa-graduation-cap me-2"></i> Google Scholar
+      </a>
+      <a href="https://github.com/raja21068" target="_blank" class="contact-link bg-transparent border-2 bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-white hover:text-blue-800 transition">
+        <i class="fab fa-github me-2"></i> GitHub
+      </a>
+      <a href="http://faculty.uestc.edu.cn/KUMARRAJESH/" target="_blank" class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
+        <i class="fas fa-globe me-2"></i> Website
+      </a>
+      <!-- Download CV Button -->
+      <a href="images/CV.pdf" download class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
+        <i class="fas fa-download me-2"></i> Download CV
+      </a>
       </div>
     </div>
- <div class="contact-links flex flex-wrap gap-4 justify-center mb-8">
-  <a href="mailto:rajakumarlohano@gmail.com" class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
-    <i class="fas fa-envelope me-2"></i> Email
-  </a>
-  <a href="tel:+923332836705" class="contact-link bg-transparent border-2 bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-white hover:text-blue-800 transition">
-    <i class="fas fa-phone me-2"></i> Contact
-  </a>
-  <a href="https://scholar.google.com" target="_blank" class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
-    <i class="fas fa-graduation-cap me-2"></i> Google Scholar
-  </a>
-  <a href="https://github.com/raja21068" target="_blank" class="contact-link bg-transparent border-2 bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-white hover:text-blue-800 transition">
-    <i class="fab fa-github me-2"></i> GitHub
-  </a>
-  <a href="http://faculty.uestc.edu.cn/KUMARRAJESH/" target="_blank" class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
-    <i class="fas fa-globe me-2"></i> Website
-  </a>
-  <!-- New Download CV Button -->
-  <a href="images/CV.pdf" download class="contact-link bg-white text-blue-800 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:shadow-xl transition">
-    <i class="fas fa-download me-2"></i> Download CV
-  </a>
-</div>
-
+    <!-- Right Column: Video & Profile Picture -->
+    <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+      <div class="relative">
+        <!-- Profile Picture Overlay -->
+        <div class="bg-white p-2 rounded-full shadow-xl absolute -top-4 -left-4 z-10">
+          <img src="pic2.jpg" alt="My Picture" class="rounded-full w-24 h-24 object-cover" />
+        </div>
+        <!-- Video Card -->
+        <div class="bg-blue-100 p-6 rounded-lg shadow-2xl transform transition duration-300 hover:rotate-1">
+          <div class="aspect-w-16 aspect-h-9 mb-4">
+            <iframe class="w-full h-64 rounded-lg shadow-md" src="https://www.youtube.com/embed/VLNk4l4ge4c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h3 class="text-blue-800 font-bold text-xl">
+            Watch My Style
+          </h3>
+          <p class="text-gray-700">
+            History of Huzhou
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- SVG Wave at Bottom -->
   <div class="absolute bottom-0 left-0 w-full overflow-hidden">
@@ -506,6 +521,14 @@
     </svg>
   </div>
 </header>
+
+
+
+
+
+
+
+
 
 
 <section id="about" class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
