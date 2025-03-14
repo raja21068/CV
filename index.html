@@ -385,6 +385,8 @@
     }
 }
 
+
+
 /* Animation for the education cards */
 @keyframes fadeInUp {
     from {
@@ -408,6 +410,36 @@
 .education-card:nth-child(3) {
     animation-delay: 0.4s;
 }
+
+
+.skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            flex: 1;
+        }
+        
+        .skill-badge {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
 </style>
   
 </head>
@@ -424,6 +456,7 @@
         <a href="#projects" class="hover:text-blue-600">Projects</a>
         <a href="#publications" class="hover:text-blue-600">Publications</a>
         <a href="#teaching" class="hover:text-blue-600">Teaching</a>
+		<a href="#health" class="hover:text-blue-600">Health&Beauty</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
       </div>
       <button id="menu-toggle" class="md:hidden text-gray-800 focus:outline-none">
@@ -560,7 +593,7 @@
 
 
 <!-- Research Categories -->
-<section id="research-categories" class="py-12 bg-gray-50">
+<section id="publications" class="py-12 bg-gray-50">
   <div class="max-w-5xl mx-auto px-4">
     <h3 class="text-2xl font-bold mb-8 text-center">Research Categories</h3>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -570,7 +603,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
         </svg>
         <h4 class="font-semibold text-lg mb-2">Journal Papers</h4>
-        <p class="text-gray-600 text-sm mb-4">35+ peer-reviewed publications in leading journals</p>
+        <p class="text-gray-600 text-sm mb-4">Peer-reviewed publications in leading journals</p>
         <div class="inline-flex items-center text-blue-600 font-medium">
           View Papers
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -624,7 +657,140 @@
   </div>
 </section>
 
-	
+<section id="skills" class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
+  <div class="container mx-auto px-6">
+    <!-- Section Header with Accent Elements -->
+    <div class="text-center mb-16">
+      <span class="inline-block px-4 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium tracking-wider mb-3">PROFESSIONAL CAPABILITIES</span>
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Skills & Contributions</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        Empowering innovation through technical expertise, creative programming, and effective leadership.
+      </p>
+    </div>
+    
+    <!-- Skills Grid with Enhanced Visual Design (No Progress Bars) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Technical Expertise Card -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-600">
+        <div class="flex items-center mb-6">
+          <div class="p-3 bg-blue-100 rounded-lg mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Technical Expertise</h3>
+        </div>
+        
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Blockchain Technology</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Expert</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Deep Learning</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Expert</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Machine Learning</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Expert</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Network Security</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Expert</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Federated Learning</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Expert</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Programming Languages Card -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-purple-600">
+        <div class="flex items-center mb-6">
+          <div class="p-3 bg-purple-100 rounded-lg mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Programming Languages</h3>
+        </div>
+        
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Python</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Advanced</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Java</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Advanced</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">C/C++</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Advanced</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">PHP</span>
+            <span class="font-bold text-yellow-600 px-3 py-1 bg-yellow-50 rounded-full text-sm">Intermediate</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Android</span>
+            <span class="font-bold text-yellow-600 px-3 py-1 bg-yellow-50 rounded-full text-sm">Intermediate</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Leadership & Management Card -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-indigo-600">
+        <div class="flex items-center mb-6">
+          <div class="p-3 bg-indigo-100 rounded-lg mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Leadership & Management</h3>
+        </div>
+        
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Research Supervision</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Advanced</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Project Management</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Advanced</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Team Leadership</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Advanced</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Academic Teaching</span>
+            <span class="font-bold text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">Advanced</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Grant Writing</span>
+            <span class="font-bold text-yellow-600 px-3 py-1 bg-yellow-50 rounded-full text-sm">Intermediate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 	<!-- Professional Experience Section with Timeline Design -->
 <section id="experience" class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
     <div class="container mx-auto px-4 max-w-5xl">
@@ -884,261 +1050,592 @@
 
 
     <!-- Projects Section -->
-<section id="projects" class="mb-16 py-8 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-3xl font-bold gradient-text mb-8">Real-Time AI Projects</h2>
-    <div class="space-y-12">
-    <!-- Project 1: The Fridge Has Eyes -->
-    <div class="bg-white p-6 rounded-lg shadow hover-zoom">
-      <h3 class="text-2xl font-bold mb-4">
-        The Fridge Has Eyes: Computer Vision (AI Camera) Inside Commercial Refrigerator
-      </h3>
-      <div class="grid md:grid-cols-2 gap-4">
-        <img src="refigitor.jpg" alt="The Fridge Has Eyes" class="rounded hover-zoom" />
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe src="https://www.youtube.com/embed/o-FAfs4jgMQ" allowfullscreen class="w-full h-full rounded"></iframe>
+<!-- Projects Section -->
+<section id="research" class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span class="inline-block px-4 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium tracking-wider mb-3">INNOVATION HUB</span>
+      <h2 class="text-4xl font-bold mb-4 text-gray-800">Real-Time AI Projects</h2>
+      <div class="w-24 h-1 bg-purple-600 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        Cutting-edge research combining artificial intelligence, computer vision, and blockchain technology to solve real-world challenges.
+      </p>
+    </div>
+    
+    <div class="space-y-16">
+      <!-- Project 1: The Fridge Has Eyes -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <div class="md:flex">
+          <div class="md:w-2/5 bg-purple-900 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-600 to-blue-700 opacity-90"></div>
+            <div class="relative p-8 text-white h-full flex flex-col justify-center">
+              <span class="text-xs font-semibold tracking-wider uppercase mb-2 inline-block bg-white bg-opacity-20 px-2 py-1 rounded">Computer Vision</span>
+              <h3 class="text-3xl font-bold mb-4">The Fridge Has Eyes</h3>
+              <p class="mb-6 text-white text-opacity-90">AI Camera System Inside Commercial Refrigerator for Inventory Management and Consumer Behavior Analysis</p>
+              <div class="flex space-x-4 mt-auto">
+                <a href="https://www.youtube.com/shorts/o-FAfs4jgMQ" target="_blank" class="flex items-center px-4 py-2 bg-white text-purple-900 rounded-lg hover:bg-opacity-90 transition-colors font-medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                  </svg>
+                  Watch Demo
+                </a>
+                <a href="https://www.nature.com/articles/s41598-021-97598-5" target="_blank" class="flex items-center px-4 py-2 bg-transparent border border-white text-white rounded-lg hover:bg-white hover:text-purple-900 transition-colors font-medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd" />
+                  </svg>
+                  Read Paper
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-3/5 p-0">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 h-full">
+              <div class="h-64 md:h-auto overflow-hidden">
+                <img src="refigitor.jpg" alt="The Fridge Has Eyes" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+              </div>
+              <div class="h-64 md:h-auto">
+                <iframe src="https://www.youtube.com/embed/o-FAfs4jgMQ" allowfullscreen class="w-full h-full"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 bg-gray-50">
+          <h4 class="font-semibold text-gray-700 mb-2">Research Impact</h4>
+          <p class="text-gray-600">This project enhances supply chain security and inventory management using AI-powered computer vision to track items in commercial refrigerators, resulting in reduced waste and improved restocking efficiency.</p>
         </div>
       </div>
-      <div class="mt-4 flex flex-col md:flex-row justify-between items-center">
-        <a href="https://www.youtube.com/shorts/o-FAfs4jgMQ" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-          Watch on YouTube
-        </a>
-        <p class="mt-2 md:mt-0">
-          Published Paper: 
-          <a href="https://www.nature.com/articles/s41598-021-97598-5" target="_blank" class="underline text-blue-600">
-            Making assembly line in supply chain robust and secure using UHF RFID
-          </a>
-        </p>
-      </div>
-    </div>
+
 
     <!-- Project 2: AI Assists Real-Time CT Scan Analysis -->
-    <div class="bg-white p-6 rounded-lg shadow hover-zoom">
-      <h3 class="text-2xl font-bold mb-4">
-        A Look Inside: AI Assists Real-Time CT Scan Analysis
-      </h3>
-      <div class="grid md:grid-cols-2 gap-4">
-        <img src="ct.jpg" alt="AI Assists Real-Time CT Scan Analysis" class="rounded hover-zoom" />
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe src="https://www.youtube.com/embed/qHgiQj3YGL0" allowfullscreen class="w-full h-full rounded"></iframe>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <div class="md:flex">
+          <div class="md:w-2/5 bg-blue-900 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-teal-700 opacity-90"></div>
+            <div class="relative p-8 text-white h-full flex flex-col justify-center">
+              <span class="text-xs font-semibold tracking-wider uppercase mb-2 inline-block bg-white bg-opacity-20 px-2 py-1 rounded">Medical AI</span>
+              <h3 class="text-3xl font-bold mb-4">A Look Inside</h3>
+              <p class="mb-6 text-white text-opacity-90">AI-Assisted Real-Time CT Scan Analysis with Blockchain-Enhanced Privacy and Security</p>
+              <div class="flex space-x-4 mt-auto">
+                <a href="https://youtu.be/qHgiQj3YGL0" target="_blank" class="flex items-center px-4 py-2 bg-white text-blue-900 rounded-lg hover:bg-opacity-90 transition-colors font-medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                  </svg>
+                  Watch Demo
+                </a>
+                <a href="https://www.sciencedirect.com/science/article/pii/S0895611122001094" target="_blank" class="flex items-center px-4 py-2 bg-transparent border border-white text-white rounded-lg hover:bg-white hover:text-blue-900 transition-colors font-medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd" />
+                  </svg>
+                  View Research
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-3/5 p-0">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 h-full">
+              <div class="h-64 md:h-auto overflow-hidden">
+                <img src="ct.jpg" alt="AI Assists Real-Time CT Scan Analysis" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+              </div>
+              <div class="h-64 md:h-auto">
+                <iframe src="https://www.youtube.com/embed/qHgiQj3YGL0" allowfullscreen class="w-full h-full"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 bg-gray-50">
+          <h4 class="font-semibold text-gray-700 mb-2">Published Research</h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0895611122001094" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-200 transition-colors">
+              <span class="text-blue-800 font-medium text-sm mb-2">Blockchain and Encryption</span>
+              <span class="text-gray-600 text-sm">Privacy-preserving model aggregation for medical images</span>
+            </a>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0895611120301075" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-200 transition-colors">
+              <span class="text-blue-800 font-medium text-sm mb-2">Decentralized Analysis</span>
+              <span class="text-gray-600 text-sm">Integration of blockchain and AI for CT scan analysis</span>
+            </a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9420107" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-200 transition-colors">
+              <span class="text-blue-800 font-medium text-sm mb-2">Federated Learning</span>
+              <span class="text-gray-600 text-sm">Privacy-preserving collaboration models</span>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="mt-4">
-        <a href="https://youtu.be/qHgiQj3YGL0" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded inline-block hover:bg-blue-700 transition mb-2">
-          Watch on YouTube
-        </a>
-        <h4 class="font-bold">Published Papers:</h4>
-        <ul class="list-disc list-inside ml-4">
-          <li>
-            <a href="https://www.sciencedirect.com/science/article/pii/S0895611122001094" target="_blank" class="underline text-blue-600">
-              Blockchain and homomorphic encryption based privacy-preserving model aggregation for medical images
-            </a>
-          </li>
-          <li>
-            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0895611120301075" target="_blank" class="underline text-blue-600">
-              An integration of blockchain and AI for decentralized CT scan analysis
-            </a>
-          </li>
-          <li>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9420107" target="_blank" class="underline text-blue-600">
-              Blockchain-federated learning models for encrypted, privacy-preserving collaboration
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Project 3: Visualizing Urban Flow -->
-    <div class="bg-white p-6 rounded-lg shadow hover-zoom">
-      <h3 class="text-2xl font-bold mb-4">
-        Visualizing Urban Flow: The Camera-Powered Smart Traffic Management System
-      </h3>
-      <div class="grid md:grid-cols-2 gap-4">
-        <img src="car.jpg" alt="Traffic Management Project" class="rounded hover-zoom" />
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe src="https://www.youtube.com/embed/EdNh4LCyOBo" allowfullscreen class="w-full h-full rounded"></iframe>
-        </div>
-      </div>
-      <div class="mt-4">
-        <a href="https://youtu.be/EdNh4LCyOBo" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded inline-block hover:bg-blue-700 transition mb-2">
-          Watch on YouTube
-        </a>
-        <h4 class="font-bold">Published Papers:</h4>
-        <ul class="list-disc list-inside ml-4">
-          <li>
-            <a href="https://www.mdpi.com/2227-7390/9/24/3162" target="_blank" class="underline text-blue-600">
-              Trends in vehicle re-identification past, present, and future: a comprehensive review
-            </a>
-          </li>
-          <li>
-            <a href="https://www.mdpi.com/2076-3417/9/7/1291" target="_blank" class="underline text-blue-600">
-              Efficient and deep vehicle re-identification using multi-level feature extraction
-            </a>
-          </li>
-          <li>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9321754" target="_blank" class="underline text-blue-600">
-              Secure ECC-based authentication for vehicle-to-vehicle communication in VANETs
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Project 4: Wire-Free Robotic Lawn Mowers -->
-    <div class="bg-white p-6 rounded-lg shadow hover-zoom">
-      <h3 class="text-2xl font-bold mb-4">
-        Wire-Free Robotic Lawn Mowers: Embracing Camera-Based Innovation for Effortless Lawn Care
-      </h3>
-      <div class="grid md:grid-cols-2 gap-4">
-        <img src="lawn.jpg" alt="Lawn Mower Project" class="rounded hover-zoom" />
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe src="https://www.youtube.com/embed/SehJvYrDLaw" allowfullscreen class="w-full h-full rounded"></iframe>
-        </div>
-      </div>
-      <div class="mt-4 flex flex-col md:flex-row justify-between items-center">
-        <a href="https://youtu.be/SehJvYrDLaw" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-          Watch on YouTube
-        </a>
-        <p class="mt-2 md:mt-0">
-          Available Code:
-          <a href="https://github.com/raja21068/-Wire-Free-Robotic-Lawn-Mowers-" target="_blank" class="underline text-blue-600">
-            GitHub Repository
+	  
+	  
+   
+   <!-- Project 3: Visualizing Urban Flow - Improved Version -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+  <div class="md:flex">
+    <div class="md:w-1/3 bg-green-900 relative">
+      <div class="absolute inset-0 bg-gradient-to-br from-green-600 to-blue-700 opacity-90"></div>
+      <div class="relative p-6 text-white h-full flex flex-col justify-center">
+        <span class="text-xs font-semibold tracking-wider uppercase mb-2 inline-block bg-white bg-opacity-20 px-2 py-1 rounded">Smart City</span>
+        <h3 class="text-2xl font-bold mb-4">Visualizing Urban Flow</h3>
+        <p class="mb-6 text-white text-opacity-90 text-sm">Camera-Powered Smart Traffic Management System with AI-Enhanced Vehicle Recognition</p>
+        <div class="flex space-x-4 mt-auto">
+          <a href="https://youtu.be/EdNh4LCyOBo" target="_blank" class="flex items-center px-3 py-1 bg-white text-green-900 rounded-lg hover:bg-opacity-90 transition-colors font-medium text-sm"">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+            </svg>
+            Watch Demo
           </a>
-        </p>
+          <a href="https://www.mdpi.com/2227-7390/9/24/3162" target="_blank" class="flex items-center px-4 py-2 bg-transparent border border-white text-white rounded-lg hover:bg-white hover:text-green-900 transition-colors font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd" />
+            </svg>
+            View Research
+          </a>
+        </div>
       </div>
     </div>
-
-    <!-- Project 5: Autonomous Forklifts -->
-    <div class="bg-white p-6 rounded-lg shadow hover-zoom">
-      <h3 class="text-2xl font-bold mb-4">
-        Beyond Human Hands: Navigating the Future of Warehousing with Camera-Powered Autonomous Forklifts AI
-      </h3>
-      <div class="grid md:grid-cols-2 gap-4">
-        <img src="forllift.jpg" alt="Forklift Project" class="rounded hover-zoom" />
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe src="https://www.youtube.com/embed/TZf-dan9Mco" allowfullscreen class="w-full h-full rounded"></iframe>
+     <div class="md:w-2/3 p-0">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 h-full">
+        <div class="h-64 md:h-auto overflow-hidden">
+          <img src="car.jpg" alt="Traffic Management Project" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
         </div>
-      </div>
-      <!-- Optional call-to-action or additional details can be added here -->
-    </div>
-  </div>
-</section>
-
-
-
-
-    <!-- Teaching Resources -->
- <section id="class-video-library" class="py-12 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-4  hover-zoom">
-    <h2 class="text-3xl font-bold gradient-text mb-8 text-center">Class Video Library</h2>
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
-      <!-- Titles Row -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <div class="text-xl font-bold">Essential Machine Learning Concepts in 5 Minutes</div>
-        <div class="text-xl font-bold">Mastering Object-Oriented Programming (OOP) in Java</div>
-      </div>
-      <!-- Videos Row -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <div>
-          <div class="aspect-w-16 aspect-h-9">
-            <iframe src="https://www.youtube.com/embed/xVx29hk7R-k" allowfullscreen class="w-full h-full rounded"></iframe>
-          </div>
-        </div>
-        <div>
-          <div class="aspect-w-16 aspect-h-9">
-            <iframe src="https://www.youtube.com/embed/31f5S1YJzPI" allowfullscreen class="w-full h-full rounded"></iframe>
-          </div>
-        </div>
-      </div>
-      <!-- Resource Links Row -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="text-sm">
-          <p>
-            <strong>Complete Course PPT:</strong>
-            <a href="https://github.com/raja21068/Machine-Learning-For-Beginerrs-Course-PPT" target="_blank" class="underline text-blue-600">Available here</a>
-          </p>
-          <p class="mt-2">
-            <strong>Python Code:</strong>
-            <a href="https://github.com/raja21068/Machine-Learning-Toturials" target="_blank" class="underline text-blue-600">Available here</a>
-          </p>
-        </div>
-        <div class="text-sm">
-          <p>
-            <strong>Complete Course PPT:</strong>
-            <a href="https://github.com/raja21068/JAVA-Basic-Level-SLIDES-ppt-" target="_blank" class="underline text-blue-600">Available here</a>
-          </p>
-          <p class="mt-2">
-            <strong>Java Code:</strong>
-            <a href="https://github.com/raja21068/Java-Programs" target="_blank" class="underline text-blue-600">Available here</a>
-          </p>
+        <div class="h-64 md:h-auto">
+          <iframe src="https://www.youtube.com/embed/EdNh4LCyOBo" allowfullscreen class="w-full h-full"></iframe>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-<section id="keynote-speaker" class="py-12 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-4">
-    <!-- 2021 Conference -->
-    <h2 class="text-3xl font-bold gradient-text mb-6 text-center">
-      Keynote Speaker at the  Conferences in Huzhou, China
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-      <img src="r1.jpg" alt="Conference 2021 Image 1" class="w-full rounded shadow-sm">
-      <img src="r2.jpg" alt="Conference 2021 Image 2" class="w-full rounded shadow-sm">
-    </div>
-    <div class="mb-8">
-      <p class="text-gray-700 mb-4">
-        <strong>Kumar Rajesh</strong>, a Pakistani expert from the Yangtze River Delta Research Institute (Huzhou), University of Electronic Science and Technology of China, introduced the development goals, development path, and location advantages of the research institute. He presented the current research results of the institute to young scholars with the theme of "Artificial Intelligence and the Environment."
-      </p>
-      <a href="https://mp.weixin.qq.com/s/zgqWzAGQl5PqgIA-8Qitcg" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-        Visit Website
+  <div class="p-6 bg-gray-50">
+    <h4 class="font-semibold text-gray-700 mb-2">Published Research</h4>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+      <a href="https://www.mdpi.com/2227-7390/9/24/3162" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-200 transition-colors">
+        <span class="text-green-800 font-medium text-sm mb-2">Vehicle Re-Identification</span>
+        <span class="text-gray-600 text-sm">Trends in vehicle re-identification: past, present, and future</span>
       </a>
+      <a href="https://www.mdpi.com/2076-3417/9/7/1291" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-200 transition-colors">
+        <span class="text-green-800 font-medium text-sm mb-2">Multi-Level Feature Extraction</span>
+        <span class="text-gray-600 text-sm">Efficient and deep vehicle re-identification techniques</span>
+      </a>
+      <a href="https://ieeexplore.ieee.org/abstract/document/9321754" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-200 transition-colors">
+        <span class="text-green-800 font-medium text-sm mb-2">Secure Communication</span>
+        <span class="text-gray-600 text-sm">ECC-based authentication for vehicle-to-vehicle communication</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Project 4: Wire-Free Robotic Lawn Mowers - Improved Version -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl mt-8">
+  <div class="md:flex">
+    <div class="md:w-1/3 bg-green-900 relative">
+      <!-- Changed from md:w-2/5 to md:w-1/3 to reduce width -->
+      <div class="absolute inset-0 bg-gradient-to-br from-green-800 to-blue-700 opacity-90"></div>
+      <div class="relative p-6 text-white h-full flex flex-col justify-center">
+        <!-- Reduced padding from p-8 to p-6 -->
+        <span class="text-xs font-semibold tracking-wider uppercase mb-2 inline-block bg-green-500 bg-opacity-20 px-2 py-1 rounded">Automated Landscaping</span>
+        <h3 class="text-2xl font-bold mb-3">Wire-Free Robotic</h3>
+        <!-- Reduced font size from text-3xl to text-2xl and margin from mb-4 to mb-3 -->
+        <p class="mb-4 text-white text-opacity-90 text-sm">Camera-Based Innovation for Effortless Lawn Care with AI Vision Systems</p>
+        <!-- Reduced margin from mb-6 to mb-4 and added text-sm -->
+        <div class="flex space-x-3 mt-auto">
+          <!-- Reduced space-x-4 to space-x-3 -->
+          <a href="https://youtu.be/SehJvYrDLaw" target="_blank" class="flex items-center px-3 py-1 bg-white text-green-900 rounded-lg hover:bg-opacity-90 transition-colors font-medium text-sm">
+            <!-- Reduced padding and added text-sm -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+              <!-- Reduced icon size and margin -->
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+            </svg>
+            Watch Demo
+          </a>
+          <a href="https://github.com/raja21068/-Wire-Free-Robotic-Lawn-Mowers-" target="_blank" class="flex items-center px-3 py-1 bg-transparent border border-white text-white rounded-lg hover:bg-white hover:text-green-900 transition-colors font-medium text-sm">
+            <!-- Reduced padding and added text-sm -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+              <!-- Reduced icon size and margin -->
+              <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            View Code
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-2/3 p-0">
+      <!-- Changed from md:w-3/5 to md:w-2/3 to increase right section width -->
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 h-full">
+        <div class="h-64 md:h-auto overflow-hidden">
+          <img src="lawn.jpg" alt="Lawn Mower Project" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+        </div>
+        <div class="h-64 md:h-auto">
+          <iframe src="https://www.youtube.com/embed/SehJvYrDLaw" allowfullscreen class="w-full h-full"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-6 bg-gray-50">
+    <h4 class="font-semibold text-gray-700 mb-2">Project Resources</h4>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+      <a href="https://github.com/raja21068/-Wire-Free-Robotic-Lawn-Mowers-" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-200 transition-colors">
+        <span class="text-green-800 font-medium text-sm mb-2">Source Code</span>
+        <span class="text-gray-600 text-sm">Complete GitHub repository with implementation details</span>
+      </a>
+      <a href="https://youtu.be/SehJvYrDLaw" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-200 transition-colors">
+        <span class="text-green-800 font-medium text-sm mb-2">Video Demonstration</span>
+        <span class="text-gray-600 text-sm">Full showcase of the robotic lawn mower in action</span>
+      </a>
+      <a href="#" target="_blank" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-200 transition-colors">
+        <span class="text-green-800 font-medium text-sm mb-2">Computer Vision</span>
+        <span class="text-gray-600 text-sm">AI-powered visual navigation and boundary detection</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 5: Autonomous Forklifts - Improved Version with Smaller Left Section -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+  <div class="md:flex">
+    <div class="md:w-1/3 bg-gray-800 relative">
+      <!-- Changed from md:w-2/5 to md:w-1/3 to reduce width -->
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-gray-700 opacity-90"></div>
+      <div class="relative p-6 text-white h-full flex flex-col justify-center">
+        <!-- Reduced padding from p-8 to p-6 -->
+        <span class="text-xs font-semibold tracking-wider uppercase mb-2 inline-block bg-yellow-500 bg-opacity-90 px-2 py-1 rounded text-gray-900">Industrial Automation</span>
+        <h3 class="text-2xl font-bold mb-3">Beyond Human Hands</h3>
+        <!-- Reduced font size from text-3xl to text-2xl and margin from mb-4 to mb-3 -->
+        <p class="mb-4 text-white text-opacity-90 text-sm">Navigating the Future of Warehousing with Camera-Powered Autonomous Forklifts AI</p>
+        <!-- Reduced margin from mb-6 to mb-4 and added text-sm -->
+        <div class="flex space-x-3 mt-auto">
+          <!-- Reduced space-x-4 to space-x-3 -->
+          <a href="https://www.youtube.com/embed/TZf-dan9Mco" target="_blank" class="flex items-center px-3 py-1 bg-yellow-500 text-gray-900 rounded-lg hover:bg-opacity-90 transition-colors font-medium text-sm">
+            <!-- Reduced padding and added text-sm -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+              <!-- Reduced icon size and margin -->
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+            </svg>
+            Watch Demo
+          </a>
+          <a href="#" target="_blank" class="flex items-center px-3 py-1 bg-transparent border border-yellow-500 text-yellow-500 rounded-lg hover:bg-yellow-500 hover:text-gray-900 transition-colors font-medium text-sm">
+            <!-- Reduced padding and added text-sm -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+              <!-- Reduced icon size and margin -->
+              <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd" />
+            </svg>
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-2/3 p-0">
+      <!-- Changed from md:w-3/5 to md:w-2/3 to increase right section width -->
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 h-full">
+        <div class="h-64 md:h-auto overflow-hidden">
+          <img src="forllift.jpg" alt="Forklift Project" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+        </div>
+        <div class="h-64 md:h-auto">
+          <iframe src="https://www.youtube.com/embed/TZf-dan9Mco" allowfullscreen class="w-full h-full"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-6 bg-gray-50">
+    <h4 class="font-semibold text-gray-700 mb-2">Key Technologies</h4>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+      <a href="#" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-200 transition-colors">
+        <span class="text-blue-800 font-medium text-sm mb-2">Computer Vision</span>
+        <span class="text-gray-600 text-sm">Advanced object detection and spatial awareness for navigation in complex environments</span>
+      </a>
+      <a href="#" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-200 transition-colors">
+        <span class="text-blue-800 font-medium text-sm mb-2">Real-time Decision Making</span>
+        <span class="text-gray-600 text-sm">AI-powered algorithms for efficient path planning and obstacle avoidance</span>
+      </a>
+      <a href="#" class="flex flex-col p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-200 transition-colors">
+        <span class="text-blue-800 font-medium text-sm mb-2">Safety Protocols</span>
+        <span class="text-gray-600 text-sm">Multiple redundant systems ensuring safe operation around human workers</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Teaching Resources -->
+<section id="teaching" class="py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-3">Class Video <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Library</span></h2>
+    <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Discover our carefully curated educational content to enhance your learning journey</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 hover:scale-102">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe src="https://www.youtube.com/embed/xVx29hk7R-k" allowfullscreen class="w-full h-full"></iframe>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Essential Machine Learning Concepts in 5 Minutes</h3>
+          <div class="mb-4 text-sm text-gray-600 space-y-2">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              <a href="https://github.com/raja21068/Machine-Learning-For-Beginerrs-Course-PPT" target="_blank" class="hover:text-blue-600 transition-colors">Complete Course PPT</a>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+              <a href="https://github.com/raja21068/Machine-Learning-Toturials" target="_blank" class="hover:text-blue-600 transition-colors">Python Code Examples</a>
+            </div>
+          </div>
+          <a href="https://www.youtube.com/embed/xVx29hk7R-k" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium">Watch Now</a>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 hover:scale-102">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe src="https://www.youtube.com/embed/31f5S1YJzPI" allowfullscreen class="w-full h-full"></iframe>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Mastering Object-Oriented Programming (OOP) in Java</h3>
+          <div class="mb-4 text-sm text-gray-600 space-y-2">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              <a href="https://github.com/raja21068/JAVA-Basic-Level-SLIDES-ppt-" target="_blank" class="hover:text-blue-600 transition-colors">Complete Course PPT</a>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+              <a href="https://github.com/raja21068/Java-Programs" target="_blank" class="hover:text-blue-600 transition-colors">Java Code Examples</a>
+            </div>
+          </div>
+          <a href="https://www.youtube.com/embed/31f5S1YJzPI" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium">Watch Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-10">
+      <a href="https://www.youtube.com/@RajaKumarraja21068" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
+        Browse All Videos
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Keynote Speaker Section -->
+<section id="keynote-speaker" class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span class="inline-block px-4 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium tracking-wider mb-3">INTERNATIONAL RECOGNITION</span>
+      <h2 class="text-4xl font-bold mb-4 text-gray-800">Distinguished Keynote Speaker</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+    </div>
+
+    <!-- 2021 Conference -->
+    <div class="mb-20">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="flex flex-col lg:flex-row">
+          <div class="lg:w-1/2">
+            <div class="p-8">
+              <div class="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 rounded text-sm font-medium mb-4">Huzhou, China • 2021</div>
+              <h3 class="text-2xl font-bold mb-4">Artificial Intelligence and the Environment</h3>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                <strong>Dr. Kumar Rajesh</strong>, a Pakistani expert from the Yangtze River Delta Research Institute (Huzhou), University of Electronic Science and Technology of China, introduced the development goals, development path, and location advantages of the research institute. He presented the current research results of the institute to young scholars with the theme of "Artificial Intelligence and the Environment."
+              </p>
+              <a href="https://mp.weixin.qq.com/s/zgqWzAGQl5PqgIA-8Qitcg" target="_blank" class="inline-flex items-center px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                <span>Conference Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 flex flex-col sm:flex-row">
+            <div class="sm:w-1/2 h-64 overflow-hidden">
+              <img src="r1.jpg" alt="Huzhou Conference 2021" class="w-full h-full object-cover">
+            </div>
+            <div class="sm:w-1/2 h-64 overflow-hidden">
+              <img src="r2.jpg" alt="Dr. Kumar presenting at Huzhou Conference" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- 2019 Conference -->
-    <h2 class="text-3xl font-bold gradient-text mb-6 text-center">
-      Keynote Speaker at the  Conferences in Gongdong, China
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-      <img src="r3.jpg" alt="Conference 2019 Image 1" class="w-full rounded shadow-sm">
-      <img src="r6.jpg" alt="Conference 2019 Image 2" class="w-full rounded shadow-sm">
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-      <img src="r4.jpg" alt="Conference 2019 Image 3" class="w-full rounded shadow-sm">
-      <img src="r5.jpg" alt="Conference 2019 Image 4" class="w-full rounded shadow-sm">
-    </div>
     <div>
-      <p class="text-gray-700">
-        <strong>Kumar Rajesh</strong>, a distinguished expert in the fields of Artificial Intelligence (AI) and Blockchain, took the stage as the keynote speaker to shed light on the "Future of AI and Blockchain." With years of experience and profound knowledge in these cutting-edge technologies, he captivated the audience with his insightful vision and predictions for the transformative potential of AI and Blockchain in various industries. Kumar's passion for innovation and the pursuit of excellence has earned him recognition as a thought leader in the tech community. Beyond his speaking engagements, he actively collaborates with renowned institutions like the Guangdong Institute of Intelligent Terminal Industrial Design, fostering cross-disciplinary dialogues and driving the development of intelligent solutions. His recent visit to the institute reflects his commitment to exploring new frontiers and pushing the boundaries of technological advancement. As the world moves into an era shaped by AI and Blockchain, Kumar Rajesh's expertise and collaborative spirit continue to inspire and pave the way for a future of boundless possibilities.
-      </p>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="flex flex-col lg:flex-row-reverse">
+          <div class="lg:w-1/2">
+            <div class="p-8">
+              <div class="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 rounded text-sm font-medium mb-4">Guangdong, China • 2019</div>
+              <h3 class="text-2xl font-bold mb-4">The Future of AI and Blockchain</h3>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                <strong>Dr. Kumar Rajesh</strong>, a distinguished expert in the fields of Artificial Intelligence (AI) and Blockchain, took the stage as the keynote speaker to shed light on the "Future of AI and Blockchain." With years of experience and profound knowledge in these cutting-edge technologies, he captivated the audience with his insightful vision and predictions for the transformative potential of AI and Blockchain across industries.
+              </p>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                His visit to the Guangdong Institute of Intelligent Terminal Industrial Design reflects his commitment to exploring new frontiers and pushing the boundaries of technological advancement.
+              </p>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="grid grid-cols-2 h-full">
+              <div class="h-48 overflow-hidden">
+                <img src="r3.jpg" alt="Guangdong Conference 2019" class="w-full h-full object-cover">
+              </div>
+              <div class="h-48 overflow-hidden">
+                <img src="r6.jpg" alt="Dr. Kumar with Conference Attendees" class="w-full h-full object-cover">
+              </div>
+              <div class="h-48 overflow-hidden">
+                <img src="r4.jpg" alt="Dr. Kumar Presenting Research" class="w-full h-full object-cover">
+              </div>
+              <div class="h-48 overflow-hidden">
+                <img src="r5.jpg" alt="Guangdong Institute Visit" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span class="inline-block px-4 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium tracking-wider mb-3">PROFESSIONAL EXCELLENCE</span>
+      <h2 class="text-4xl font-bold mb-4 text-gray-800">Awards & Achievements</h2>
+      <div class="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-12">
+      <div class="p-8">
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold mb-6 text-gray-800">Acclaimed Recognition</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="ml-3 text-gray-700"><strong>Best Runner Up</strong> - IEEE Sensors Journal</span>
+            </li>
+            <li class="flex items-start">
+              <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="ml-3 text-gray-700"><strong>Excellent Performance Award</strong> - Ph.D. Studies</span>
+            </li>
+            <li class="flex items-start">
+              <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="ml-3 text-gray-700"><strong>Best Oral Presentation</strong> - International Conference on Computing and Artificial Intelligence</span>
+            </li>
+          </ul>
+        </div>
+      
+        <div>
+          <h3 class="text-2xl font-bold mb-6 text-gray-800">Technical Certifications</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg font-medium">Java</span>
+            <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg font-medium">PHP</span>
+            <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg font-medium">Android</span>
+            <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg font-medium">.Net</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="h-56 overflow-hidden rounded-lg shadow">
+        <img src="a1.jpg" alt="Achievement Recognition" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+      </div>
+      <div class="h-56 overflow-hidden rounded-lg shadow">
+        <img src="a2.jpg" alt="Award Ceremony" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+      </div>
+      <div class="h-56 overflow-hidden rounded-lg shadow">
+        <img src="a3.jpg" alt="Professional Recognition" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+      </div>
+      <div class="h-56 overflow-hidden rounded-lg shadow">
+        <img src="a4.jpg" alt="Certificate Presentation" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+      </div>
     </div>
   </div>
 </section>
 
 
+<section id="health" class="py-12 bg-gray-50">
+  <div class="container mx-auto px-6">
+  
+    <h2 class="text-3xl font-bold text-center mb-4">Public Society Enhancement</h2>
+	
+    <p class="text-center text-gray-700 mb-8">
+      Contributing to a better world through innovation, community service, and sustainable practices.
+	  
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+ <!-- Card 1: Workout / Exercise -->
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/1.jpg" alt="Workout / Exercise" class="w-full rounded-t-lg">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-blue-800 mb-2">Workout / Exercise</h2>
+          <p class="text-gray-600 mb-4">
+            Boost your energy and build strength with our tailored workout plans.
+          </p>
+          <a href="https://raja21068.github.io/workout/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Explore More
+          </a>
+        </div>
+      </div>
+    <!-- Card 2: Meditation / Yoga -->
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/4.jpg" alt="Meditation / Yoga" class="w-full rounded-t-lg">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-blue-800 mb-2">Meditation / Yoga</h2>
+          <p class="text-gray-600 mb-4">
+            Find inner peace and flexibility with our guided yoga sessions.
+          </p>
+          <a href="https://raja21068.github.io/yoga/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Explore More
+          </a>
+        </div>
+      </div>
+      <!-- Card 3: Relaxing Music -->
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/5.jpg" alt="Relaxing Music" class="w-full rounded-t-lg">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-blue-800 mb-2">Relaxing Music</h2>
+          <p class="text-gray-600 mb-4">
+            Unwind with our curated collection of soothing tunes.
+          </p>
+          <a href="https://raja21068.github.io/music/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Explore More
+          </a>
+        </div>
+      </div>
 
-<section id="achievements" class="py-12 bg-white">
-  <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-3xl font-bold gradient-text mb-6 text-center">
-      Acclaimed Achievements: Celebrating Dr. Kumar's Stellar Career and Awards
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-      <img src="a1.jpg" alt="Achievement Image 1" class="w-full rounded shadow-sm">
-      <img src="a2.jpg" alt="Achievement Image 2" class="w-full rounded shadow-sm">
+     <!-- Card 4: Skincare -->
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/6.jpg" alt="Skincare" class="w-full rounded-t-lg">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-blue-800 mb-2">Skincare</h2>
+          <p class="text-gray-600 mb-4">
+            Glow up with personalized skincare tips and courses.
+          </p>
+          <a href="https://raja21068.github.io/skin/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Explore More
+          </a>
+        </div>
+      </div>
+	  
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-      <img src="a3.jpg" alt="Achievement Image 3" class="w-full rounded shadow-sm">
-      <img src="a4.jpg" alt="Achievement Image 4" class="w-full rounded shadow-sm">
-    </div>
-    <div>
-      <p class="text-gray-700">
-        Kumar Rajesh's career has been adorned with remarkable accolades, exemplified by his recognition as the Best Runner Up by the IEEE Sensors Journal and his Excellent Performance award during his Ph.D. studies. Additionally, his prowess as a speaker was acknowledged with the Best Oral Presentation award at the prestigious International Conference on Computing and Artificial Intelligence. Dr. Kumar further substantiates his expertise with certificates in Java, PHP, Android, and .Net programming.
-      </p>
-    </div>
+	 <p class="text-center text-gray-700 text-sm">
+     Ethical Statement: This website is open source and is intended solely to showcase ethical web design and development practices. It is not affiliated with any commercial venture or business. Contributions and improvements are welcome under an open source license.
+    </p>
   </div>
 </section>
-
 
 
  <!-- Contact Section -->
